@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delitos Informáticos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Delitos Informáticos</h1>
+    </header>
+    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: center;">
+        <main class="flex-container">
+            <section id="phishing" class="section">
+                <h2>Delitos contra la Moral e Integridad de las Personas - Phishing</h2>
+                <p>El <strong>phishing</strong> es uno de los delitos informáticos que más víctimas tiene por año el cual va en aumentando cada vez más</p>
+                <div id="cont">
+                    <article class="graf">
+                        <h3>Cantidad Aproximada de Ataques Exitosos en los Últimos Años</h3>
+                        <canvas id="phishingChart" class="canvas-small"></canvas>
+                        <p><a href="https://www.statista.com/forecasts/1485016/cyberattacks-annual-worldwide-by-type" target="_blank" class="fuent">Fuente</a></p>
+                    </article>
+                    
+                    <article class="graf">
+                        <h3>Países de Latinoamérica con más Intentos de Ataques en el 2023</h3>
+                        <canvas id="phishingChartLatam" class="canvas-small"></canvas>
+                        <p><a href="https://latam.kaspersky.com/blog/panorama-amenazas-latam-2023/26586/?srsltid=AfmBOop_2zVulpTizzlQmCAuD-GnWItOnjxHRZomnse24dqFANsq1eor" target="_blank" class="fuent">Fuente</a></p>
+                    </article>
+                </div>
+                <h3>4 de cada 10 intentos de phishing se dirigen a datos financieros</h2>
+            </section>
+            <section id="malware" class="section">
+                <article>
+                    <h2>Delitos contra los Bienes Económicos - Ransomware</h2>
+                    <p>Los malwares son programas diseñados para infiltrarse, dañar o acceder a sistemas informáticos sin el consentimiento del usuario...</p>
+                </article>
+                <div id="cont">
+                    <article class="graf">
+                        <canvas id="malwareChart" class="canvas-small"></canvas>
+                        <p><a href="https://www.statista.com/statistics/494947/ransomware-attempts-per-year-worldwide/" class="fuent" target="_blank">Fuente</a></p>
+                    </article>
+                
+                    <article class="graf">
+                        <h3>Métodos Comunes de Ataque de Ransomware</h3>
+                        <canvas id="ransomwareMethods" class="canvas-small"></canvas>
+                        <h3> <b style="color: #252525; font-size: 1.2em;">RDP:</b> permite a los atacantes conectarse a otro ordenador de forma remota a través de una red.</h3>
+                        <h3> <b style="color: #252525; font-size: 1.2em;">Explotación de Vulnerabilidades:</b> Los atacantes aprovechan las debilidades en el software o sistemas operativos</h3>
+                        <h3> <b style="color: #252525; font-size: 1.2em;">Otros Metodos:</b> Incluye técnicas como el uso de malware descargado desde sitios web comprometidos y ataques a través de dispositivos USB infectados.</h3>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <section id="wanna">
+            <article class="graf">
+                <h2>Ransomware - WannaCry</h2>
+                <h3>Perdidas economicas en 4 de los países mas afectados por WannaCry</h3>
+                <canvas id="wannaCryChart" class="canvas-small"></canvas>
+                <h3><b style="color: #252525; font-size: 1.2em;">Rusia:</b> No se reportaron cifras específicas de pérdidas económicas <br> pero se sabe que fue uno de los países más afectados</h3>
+                <h3><b style="color: #252525; font-size: 1.2em;">Alemania:</b> Aunque no se reportaron cifras exactas, se estima que la empresa <br> ferroviaria Deutsche Bahn enfrentó pérdidas significativas</h3>
+                <iframe src="https://www.youtube.com/embed/IEAtGCkbq5Y?si=4DUAtz99qKoHSeFt&amp;controls=0&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>¿Quieres Saber más sobre WannaCry?</h3>
+                    <a href="https://www.malwarebytes.com/es/wannacry#:~:text=cibern%C3%A9tico%20tan%20importante.-,%C2%BFQu%C3%A9%20fue%20el%20ataque%20del%20ransomware%20WannaCry%3F,-%22%C2%A1Uy%2C%20sus%20archivos" target="_blank"><p class="css-button-arrow--sky">Pulse aquí </p></a>
+            </article>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+

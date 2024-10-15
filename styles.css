@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: auto; /* Ajustar el alto del body */
+    font-family: Arial, sans-serif;
+    background-color: #393E46; 
+    color: #333; 
+    text-align: center;
+}
+
+header {
+    background-color: #222831; 
+    color: #fff;
+    padding: 1rem; 
+}
+
+
+h1, h2 {
+    margin: 0; 
+}
+
+.fuent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    background-color: #d3d2d2;
+    font-size: 0.7rem;
+}
+
+.fuent:hover {
+    background-color: #bdbdbd;
+    border-radius: 5%;
+}
+
+.graf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+    max-width: 1000px; /* O un máximo deseado */
+    margin: 0 auto; /* Centrar en la pantalla */
+    padding: 1rem; /* Espaciado alrededor del contenido */
+}
+
+main.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    padding: 1rem; 
+    width: 100%; /* Asegúrate de que ocupe el 100% */
+}
+
+.section {
+    width: 95%;
+    background-color: #eeeeeed0; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 2rem); 
+    display: flex;
+    flex-direction: column;
+}
+
+#wanna {
+    width: 95%;
+    background-color: #eeeeeed0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+}
+
+#wanna h2 {
+    margin-bottom: 5vw;
+}
+
+.canvas-small {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h3 {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00000083;
+    margin: 1em;
+}
+
+p{
+    margin: 1.2em;
+}
+
+iframe {
+    width: 80%;
+    height: 60vh;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border: 5px groove #00cdd8; 
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 768px) {
+    main.flex-container {
+        flex-direction: column; /* Asegúrate de que el flex-container cambie a columna en móviles */
+    }
+    
+    .section {
+        flex: 1 1 100%; /* Se asegura que cada sección ocupe el 100% del ancho */
+    }
+
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajustar el tamaño de los encabezados */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    h1{
+        font-size: 0.2;
+    }
+
+    a {
+        font-size: 0.6rem;
+    }
+
+    .canvas-small {
+        max-width: 100%;
+    }
+
+    article {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-size: 0.7em; 
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.css-button-arrow--sky {
+    min-width: 130px;
+    height: 5vh;
+    color: #d7fcf7;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a86ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-button-arrow--sky:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.css-button-arrow--sky:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.css-button-arrow--sky:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+
+
+  
+  
+  
